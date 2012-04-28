@@ -3,7 +3,12 @@ import sys
 import pprint
 from httplib import HTTPConnection
 import urllib2
-
+'''
+Usage:
+   thisfile.py django.po django2.po
+   :django.po: input file
+   :django2.po: output file
+'''
 def translate(msg):
     http = HTTPConnection('translate.google.cn')
     http.request('GET','/translate_a/t?client=t&text=%s&hl=en&sl=auto&tl=zh-CN&multires=1&otf=1&ssel=0&tsel=6&uptl=en&alttl=zh-CN&sc=1' % urllib2.quote(msg),
