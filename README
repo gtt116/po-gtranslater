@@ -1,0 +1,7 @@
+Use google to translate a po file
+if msgstr is existed, I will not translate it and pass through.
+if msgstr is empty, I will translate it by Google Translater.
+
+what's more is a msgstr is tag by `Fuzzy`,I will translate it too!
+
+Good Day!~
